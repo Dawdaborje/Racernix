@@ -1,20 +1,18 @@
-[tool.poetry]
+[project]
 name = "racernix"
 version = "0.1.0"
-description = ""
-authors = ["Börje's Tech <info@borjestech.com>"]
+description = "Racernix is a real-time fraud detection system built with a hybrid engine using Python for machine learning and Rust for high-performance computation. It’s designed to swiftly identify and prevent fraudulent transactions, ensuring security while integrating seamlessly with your future backend."
+authors = [
+    {name = "Dawdaborje",email = "dawdaborjekujabi@gmail.com"}
+]
+license = {text = "MIT"}
 readme = "README.md"
+requires-python = ">=3.13,<4.0"
+dependencies = [
+    "django (>=5.2.1,<6.0.0)"
+]
 
-[tool.poetry.dependencies]
-python = "^3.12"
-scikit-learn = "^1.6.0"
-pandas = "^2.2.3"
-numpy = "^2.2.0"
-
-
-[tool.poetry.group.dev.dependencies]
-pytest = "^8.3.4"
 
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
