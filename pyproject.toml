@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "racernix"
+version = "0.1.0"
+description = ""
+authors = ["Börje's Tech <info@borjestech.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+scikit-learn = "^1.6.0"
+pandas = "^2.2.3"
+numpy = "^2.2.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
